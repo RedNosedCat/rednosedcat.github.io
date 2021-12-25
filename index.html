@@ -1,0 +1,507 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon-16x16.png?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon-32x32.png?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Liudongdong Blog">
+<meta property="og:url" content="http://blog.lddwo.com/index.html">
+<meta property="og:site_name" content="Liudongdong Blog">
+<meta property="og:description" content="博客">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Liudongdong">
+<meta property="article:tag" content="博客">
+<meta name="twitter:card" content="summary"><title>Liudongdong Blog</title><link ref="canonical" href="http://blog.lddwo.com/index.html"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.6.2"><script>var Stun = window.Stun || {};
+var CONFIG = {
+  root: '/',
+  algolia: undefined,
+  assistSearch: undefined,
+  fontIcon: {"prompt":{"success":"fas fa-check-circle","info":"fas fa-arrow-circle-right","warning":"fas fa-exclamation-circle","error":"fas fa-times-circle"},"copyBtn":"fas fa-copy"},
+  sidebar: {"offsetTop":"20px","tocMaxDepth":6},
+  header: {"enable":true,"showOnPost":true,"scrollDownIcon":false},
+  postWidget: {"endText":true},
+  nightMode: {"enable":true},
+  back2top: {"enable":true},
+  codeblock: {"style":"carbon","highlight":"light","wordWrap":true},
+  reward: false,
+  fancybox: false,
+  zoomImage: {"gapAside":"20px"},
+  galleryWaterfall: undefined,
+  lazyload: false,
+  pjax: undefined,
+  externalLink: {"icon":{"enable":true,"name":"fas fa-external-link-alt"}},
+  shortcuts: undefined,
+  prompt: {"copyButton":"复制","copySuccess":"复制成功","copyError":"复制失败"},
+  sourcePath: {"js":"js","css":"css","images":"images"},
+};
+
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.2.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">文章</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-search"><span class="header-nav-search__icon"><i class="fas fa-search"></i></span><span class="header-nav-search__text">搜索</span></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">Liudongdong Blog</div><div class="header-banner-info__subtitle">write code and live</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content content-home" id="content"><section class="postlist"><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/12/25/EXPLAIN%E5%85%B3%E9%94%AE%E8%AF%8D%E8%BF%94%E5%9B%9E%E7%9A%84%E5%AD%97%E6%AE%B5%E6%8F%8F%E8%BF%B0/">explain关键词</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2021-12-25</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-12-25</span></span></div></header><div class="post-body"><div class="post-excerpt">
+        <h3 id="Explain关键字"   >
+          <a href="#Explain关键字" class="heading-link"><i class="fas fa-link"></i></a><a href="#Explain关键字" class="headerlink" title="Explain关键字"></a>Explain关键字</h3>
+      <p>可以查看mysql的执行过程</p>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th align="left">id</th>
+<th align="center">select_type</th>
+<th align="center">table</th>
+<th align="center">type</th>
+<th align="center">possible_keys</th>
+<th align="center">key</th>
+<th align="center">key_len</th>
+<th align="center">ref</th>
+<th align="center">rows</th>
+<th align="center">extra</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1</td>
+<td align="center">SIMPLE</td>
+<td align="center">udid_info</td>
+<td align="center">ALL</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4900945</td>
+<td align="center"></td>
+</tr>
+</tbody></table></div>
+<p>select_type字段值概述：(select类型)</p>
+<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">SIMPLE  :   简单SELECT(不使用UNION或子查询)</span><br><span class="line">PRIMARY :   最外面的select</span><br><span class="line">UNION   :   UNION中的第二个或后面的SELECT语句</span><br><span class="line">DEPENDENT UNION: UNION中的第二个或后面的SELECT语句,取决于外面的查询</span><br><span class="line">UNION RESULT: UNION的结果</span><br><span class="line">SUBQUERY:   子查询中的第一个select</span><br><span class="line">DEPENDENT SUBQUERY: 子查询中的第一个select,取决于外面的查询</span><br><span class="line">DERIVED :   导出表的select</span><br></pre></td></tr></table></div></figure>
+
+<p>table字段:</p>
+<p>返回行所在的表名</p>
+<p>type字段值概述:(链接类型,按照从最佳类型到最坏类型进行排序：)</p>
+<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">system  : 仅有一行数据的表(系统表)</span><br><span class="line">const   : 表最多有一个匹配行，在查询开始前被读取</span><br><span class="line">eq_ref  : </span><br><span class="line">ref     :   </span><br><span class="line">index_merge : 该联接类型表示使用了索引合并优化方法</span><br><span class="line">unique_subquery : 是一个索引查找函数，可以完全替换子查询，效率更高。</span><br><span class="line">index_subquery : 同unique_subquery可以替换IN子查询，但只适合子查询中的非唯一索引</span><br><span class="line">range   :   范围查找</span><br><span class="line">index   :   该联接类型与ALL相同，除了只有索引树被扫描</span><br><span class="line">ALL     :   全表扫描            </span><br><span class="line"></span><br></pre></td></tr></table></div></figure>
+<p>possible_keys：</p>
+<p>possible_keys列指出MySQL能使用哪个索引在该表中找到行<br>#<br>key：</p>
+<p>key列显示MySQL实际决定使用的键（索引）。如果没有选择索引，键是NULL。要想强制MySQL使用或忽视possible_keys列中的索引，在查询中使用FORCE INDEX、USE INDEX或者IGNORE INDEX<br>#<br>key_len</p>
+<p>key_len列显示MySQL决定使用的键长度。如果键是NULL，则长度为NULL。注意通过key_len值我们可以确定MySQL将实际使用一个多部关键字的几个部分。<br>#<br>ref</p>
+<p>ref列显示使用哪个列或常数与key一起从表中选择行。<br>#<br> rows</p>
+<p>rows列显示MySQL认为它执行查询时必须检查的行数。<br>#<br> Extra</p>
+<p>该列包含MySQL解决查询的详细信息</p>
+<pre><code class="angular2">    Distinct
+    Not exists
+    range checked for each record
+    Using filesort
+    Using index
+    Using temporary
+    Using where
+    Using sort_union(...), Using union(...), Using intersect(...)
+    Using index for group-by</code></pre>
+</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/12/25/php%E9%9D%A2%E8%AF%95%E9%A2%98/">php面试题</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2021-12-25</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-12-25</span></span></div></header><div class="post-body"><div class="post-excerpt">
+        <h3 id="1-什么是面向对象-主要特征是什么"   >
+          <a href="#1-什么是面向对象-主要特征是什么" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-什么是面向对象-主要特征是什么" class="headerlink" title="1.什么是面向对象?主要特征是什么?"></a>1.什么是面向对象?主要特征是什么?</h3>
+      <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">面向对象是程序的一种设计方式,提高程序重用性，使程序结构更加清晰。</span><br><span class="line"></span><br><span class="line">主要特征:封装、继承、多态</span><br></pre></td></tr></table></div></figure>
+
+
+        <h3 id="2-SESSION和COOKIE的区别是什么，请从协议和，产生的原因和作用说明？"   >
+          <a href="#2-SESSION和COOKIE的区别是什么，请从协议和，产生的原因和作用说明？" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-SESSION和COOKIE的区别是什么，请从协议和，产生的原因和作用说明？" class="headerlink" title="2.SESSION和COOKIE的区别是什么，请从协议和，产生的原因和作用说明？"></a>2.SESSION和COOKIE的区别是什么，请从协议和，产生的原因和作用说明？</h3>
+      <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.协议方面：http无状态协议，不能区分用户是否从同一个网站上来的，同一个用户请求不同的页面不能看作是同一个用户。</span><br><span class="line"></span><br><span class="line">2.SESSION存储在服务端，COOKIE存储在客户端。SESSION相对于安全点，COOKIE用某些手段可以篡改。SESSION依赖于COOKIE进行传递。禁用COOKIE后SESSION不能正常使用。</span><br></pre></td></tr></table></div></figure>
+
+
+        <h3 id="3-HTTP协议中302、403、500状态码的含义"   >
+          <a href="#3-HTTP协议中302、403、500状态码的含义" class="heading-link"><i class="fas fa-link"></i></a><a href="#3-HTTP协议中302、403、500状态码的含义" class="headerlink" title="3.HTTP协议中302、403、500状态码的含义?"></a>3.HTTP协议中302、403、500状态码的含义?</h3>
+      <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">一二三四五原则:</span><br><span class="line">一、消息系列 </span><br><span class="line">二、成功系列 </span><br><span class="line">三、重定向系列 </span><br><span class="line">四、请求错误系列 </span><br><span class="line">五、服务器端端错误系列</span><br><span class="line">302临时转移成功、403禁止访问、500服务器内部错误</span><br></pre></td></tr></table></div></figure>
+
+
+        <h3 id="4-LINUX建立压缩包，解压缩包的命令"   >
+          <a href="#4-LINUX建立压缩包，解压缩包的命令" class="heading-link"><i class="fas fa-link"></i></a><a href="#4-LINUX建立压缩包，解压缩包的命令" class="headerlink" title="4.LINUX建立压缩包，解压缩包的命令"></a>4.LINUX建立压缩包，解压缩包的命令</h3>
+      <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">Tar.gz:</span><br><span class="line">打包：tar czf file.tar.gz file.txt</span><br><span class="line">解压：tar xzf  file.tar.gz</span><br><span class="line"></span><br><span class="line">Bz2:</span><br><span class="line">打包：bzip 2 [-k]  文件</span><br><span class="line">解压：bunzip2  [-k] 文件</span><br><span class="line"></span><br><span class="line">Gzip:(只对文件，不保留原文件)</span><br><span class="line">打包：gzip file1.txt</span><br><span class="line">解压: gunzip file1.txt.gz</span><br><span class="line"></span><br><span class="line">Zip:-r(对目录)</span><br><span class="line">打包：zip file1.zip</span><br><span class="line">解压：unzip file.zip</span><br></pre></td></tr></table></div></figure>
+
+        <h3 id="5-请写出数据类型-int-char-varchar-datetime-text-的意思；请问-varchar-和-char有什么区别？"   >
+          <a href="#5-请写出数据类型-int-char-varchar-datetime-text-的意思；请问-varchar-和-char有什么区别？" class="heading-link"><i class="fas fa-link"></i></a><a href="#5-请写出数据类型-int-char-varchar-datetime-text-的意思；请问-varchar-和-char有什么区别？" class="headerlink" title="5.请写出数据类型(int char varchar datetime text)的意思；请问 varchar 和 char有什么区别？();"></a>5.请写出数据类型(int char varchar datetime text)的意思；请问 varchar 和 char有什么区别？();</h3>
+      <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">int:整形 </span><br><span class="line">char:固定长度字符串 </span><br><span class="line">varchar:可变长度字符串 </span><br><span class="line">datetime:日期时间格式 </span><br><span class="line">text:文本型</span><br><span class="line"></span><br><span class="line">varchar和char的区别:char是固定长度的字符串类型，分配多少空间，就会占用多少空间。Varchar是可变型字符串类型，内容有多大就占用多大空间，能有效节省空间。由于varchar类型是可变的，所以在数据长度改变时，服务器需要进行额外操作，所以效率比char类型低</span><br></pre></td></tr></table></div></figure>
+
+
+        <h3 id="6-MyISAM-和-InnoDB-的基本区别？索引结构如何实现？"   >
+          <a href="#6-MyISAM-和-InnoDB-的基本区别？索引结构如何实现？" class="heading-link"><i class="fas fa-link"></i></a><a href="#6-MyISAM-和-InnoDB-的基本区别？索引结构如何实现？" class="headerlink" title="6. MyISAM 和 InnoDB 的基本区别？索引结构如何实现？"></a>6. MyISAM 和 InnoDB 的基本区别？索引结构如何实现？</h3>
+      <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">MyISAM类型不支持事务、表锁，易产生碎片化，要经常优化，读写速度较快。InnoDB类型支持事务，行锁，有崩溃恢复能力，读写速度比MyISAM慢。</span><br><span class="line"></span><br><span class="line">MyISAM支持表锁不支持行锁，InnoDB表锁和行锁都支持。</span><br><span class="line"></span><br><span class="line">创建索引:alert table tablename add index (&#39;字段名&#39;)</span><br></pre></td></tr></table></div></figure>
+
+        <h3 id="7-isset-和empty-的区别"   >
+          <a href="#7-isset-和empty-的区别" class="heading-link"><i class="fas fa-link"></i></a><a href="#7-isset-和empty-的区别" class="headerlink" title="7.isset()和empty()的区别"></a>7.isset()和empty()的区别</h3>
+      <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">isset()检测变量是否存在，可以传入多个变量,若其中一个不存在则返回假，empty()检测变量是否为空，只可传入一个变量，如果为空为假则返回真</span><br></pre></td></tr></table></div></figure>
+
+
+        <h3 id="8-如何在页面之间传递变量-至少两种方式"   >
+          <a href="#8-如何在页面之间传递变量-至少两种方式" class="heading-link"><i class="fas fa-link"></i></a><a href="#8-如何在页面之间传递变量-至少两种方式" class="headerlink" title="8.如何在页面之间传递变量(至少两种方式)?"></a>8.如何在页面之间传递变量(至少两种方式)?</h3>
+      <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET,POST,COOKIE,SESSION，隐藏表单</span><br></pre></td></tr></table></div></figure>
+
+
+        <h3 id="9-请写出常见的排序算法？并用PHP实现冒泡排序，将数组-array-按照从小到大的方式进行排序。"   >
+          <a href="#9-请写出常见的排序算法？并用PHP实现冒泡排序，将数组-array-按照从小到大的方式进行排序。" class="heading-link"><i class="fas fa-link"></i></a><a href="#9-请写出常见的排序算法？并用PHP实现冒泡排序，将数组-array-按照从小到大的方式进行排序。" class="headerlink" title="9.请写出常见的排序算法？并用PHP实现冒泡排序，将数组$array = ()按照从小到大的方式进行排序。"></a>9.请写出常见的排序算法？并用PHP实现冒泡排序，将数组$array = ()按照从小到大的方式进行排序。</h3>
+      <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">常见的排序算法有：冒泡排序法、快速排序法、简单选择排序法、堆排序法、直接插入排序法、希尔排序法、合并排序法</span><br><span class="line">冒泡排序法的基本思想是：对排序记录关键字从后往前，进行多次扫描，当发现两个相邻的关键字不满足排序规则时，就将这两个关键字进行位置交换。这样关键字较小的记录将会逐渐从后面像前面移动。</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;冒泡排序</span><br><span class="line">function mp_sort($arr)&#123;</span><br><span class="line">    $arrayLength &#x3D; count($arr);</span><br><span class="line">    for($i &#x3D; 0; $i &lt; $arrayLength; $i++)&#123;</span><br><span class="line">        for($j &#x3D; $i+1 ; $j &lt; $arrayLength; $j++)&#123;</span><br><span class="line">            if($arr[$j] &lt; $arr[$i])&#123;</span><br><span class="line">                $value &#x3D; $arr[$i];</span><br><span class="line">                $arr[$i] &#x3D; $arr[$j];</span><br><span class="line">                $arr[$j] &#x3D; $value;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return $arr;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$arr &#x3D; [1 , 3 , 5 , 7 , 9 , 8 , 6];</span><br><span class="line">$res &#x3D; mp_sort($arr);</span><br></pre></td></tr></table></div></figure>
+
+
+        <h3 id="10-请说明PHP中引用与传值的区别？什么时候用引用什么时候用传值？"   >
+          <a href="#10-请说明PHP中引用与传值的区别？什么时候用引用什么时候用传值？" class="heading-link"><i class="fas fa-link"></i></a><a href="#10-请说明PHP中引用与传值的区别？什么时候用引用什么时候用传值？" class="headerlink" title="10.请说明PHP中引用与传值的区别？什么时候用引用什么时候用传值？"></a>10.请说明PHP中引用与传值的区别？什么时候用引用什么时候用传值？</h3>
+      <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">传值：函数范围内对值的任意改变都会被函数外部所忽略</span><br><span class="line">引用：函数内部对值的改变在函数外部也能反映出来</span><br><span class="line"></span><br><span class="line">按值传递，php必须进行赋值，对于特别大的字符串或者对象来说，这将会是一个代价很大的操作，按引用传递，则不需要赋值，可以节省内存开销,对于性能提高很有好处，但是每次值的改变，都会影响到原来的变量。</span><br></pre></td></tr></table></div></figure>
+
+
+        <h3 id="11-请简述一下数据库优化？"   >
+          <a href="#11-请简述一下数据库优化？" class="heading-link"><i class="fas fa-link"></i></a><a href="#11-请简述一下数据库优化？" class="headerlink" title="11.请简述一下数据库优化？"></a>11.请简述一下数据库优化？</h3>
+      <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">从结构层:web服务器采用负载均衡，mysql服务器采用主从复制，读写分离</span><br><span class="line">从储存层：采用合适的存储引擎</span><br><span class="line">从设计层：采用分区分表，索引，表的字段采用合适的属性，开启mysql缓存</span><br><span class="line">sql语句层：优化查询语句</span><br></pre></td></tr></table></div></figure>
+
+
+        <h3 id="12-如何解决异常处理？"   >
+          <a href="#12-如何解决异常处理？" class="heading-link"><i class="fas fa-link"></i></a><a href="#12-如何解决异常处理？" class="headerlink" title="12.如何解决异常处理？"></a>12.如何解决异常处理？</h3>
+      <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">抛出异常，使用try...catch，异常的代码放到try代码块，如果没有出发异常，代码继续执行，如果异常被触发，就会抛出一个异常.Catch代码块捕获异常，并创建一个包含异常的对象，$-&gt;getMessage(),输出异常的错误信息。</span><br></pre></td></tr></table></div></figure>
+
+
+        <h3 id="13-怎么保证促销商品不会超卖？"   >
+          <a href="#13-怎么保证促销商品不会超卖？" class="heading-link"><i class="fas fa-link"></i></a><a href="#13-怎么保证促销商品不会超卖？" class="headerlink" title="13.怎么保证促销商品不会超卖？"></a>13.怎么保证促销商品不会超卖？</h3>
+      <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">数据库锁，高并发时会对数据库的性能影响很大；</span><br><span class="line">文件锁，会导致大量的I&#x2F;O操作</span><br><span class="line">可以采用Redis队列实现，将要促销的商品数量以队列的方式存入redis中，每当用户抢到一件促销商品时则从队列中删除一个数据，确保商品不会超卖。操作简单，而且效率极高</span><br></pre></td></tr></table></div></figure>
+
+
+        <h3 id="14-商城秒杀的实现？"   >
+          <a href="#14-商城秒杀的实现？" class="heading-link"><i class="fas fa-link"></i></a><a href="#14-商城秒杀的实现？" class="headerlink" title="14.商城秒杀的实现？"></a>14.商城秒杀的实现？</h3>
+      <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">抢购、秒杀场景需要解决的主要问题有两个：高并发对数据库产生的压力、竞争状态下如何解决库存的正确减少</span><br><span class="line">高并发方面：可以采用数据缓存来处理抢购，避免直接操作数据库</span><br><span class="line">库存方面：可以采用队列方式，把要秒杀的商品存放到队列中，因为pop操作时原子性的，即使有很多用户同时到达，也是依次执行，文件锁和事务在高并发的情况下性能下降很快；</span><br></pre></td></tr></table></div></figure>
+
+
+        <h3 id="15-laravel框架有哪些特色"   >
+          <a href="#15-laravel框架有哪些特色" class="heading-link"><i class="fas fa-link"></i></a><a href="#15-laravel框架有哪些特色" class="headerlink" title="15.laravel框架有哪些特色?"></a>15.laravel框架有哪些特色?</h3>
+      <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">laravel框架的设计思想比较先进，非常适合应用各种开发模式，Laravel框架的最大特点和优秀之处就是集合了PHP比较新的特点，以及各种各样的设计模式，loc模式，依赖注入模式等</span><br><span class="line">  artisan：命令行工具，很多手动的工作都自动化</span><br><span class="line">  可继承的模板：简化view的开发和管理</span><br><span class="line">  blade模板：渲染速度更快</span><br><span class="line">  ORM操作数据库</span><br><span class="line">  migrate：管理数据库和版本控制</span><br><span class="line">  测试功能也很强大</span><br><span class="line">  composer也是亮点</span><br></pre></td></tr></table></div></figure>
+
+
+        <h3 id="16-为什么使用Laravel框架，他有什么好处，为什么不用其他框架"   >
+          <a href="#16-为什么使用Laravel框架，他有什么好处，为什么不用其他框架" class="heading-link"><i class="fas fa-link"></i></a><a href="#16-为什么使用Laravel框架，他有什么好处，为什么不用其他框架" class="headerlink" title="16.为什么使用Laravel框架，他有什么好处，为什么不用其他框架?"></a>16.为什么使用Laravel框架，他有什么好处，为什么不用其他框架?</h3>
+      <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">能快速开发功能，自带各种方便的服务，比如数据验证、队列、缓存、数据迁移、测试、artisan命令行等，还有强大的ORM</span><br></pre></td></tr></table></div></figure>
+
+
+        <h3 id="17-写出一个能创建多级目录的PHP函数"   >
+          <a href="#17-写出一个能创建多级目录的PHP函数" class="heading-link"><i class="fas fa-link"></i></a><a href="#17-写出一个能创建多级目录的PHP函数" class="headerlink" title="17.写出一个能创建多级目录的PHP函数"></a>17.写出一个能创建多级目录的PHP函数</h3>
+      <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">function makeDir($dirName , $auth)&#123;</span><br><span class="line">    if(is_dir($dirName))&#123;</span><br><span class="line">        echo &#39;目录已经存在&#39;;</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        $res &#x3D; make_dir($dirName , $auth , true);</span><br><span class="line">        if($res)&#123;</span><br><span class="line">            echo &#39;创建目录成功&#39;;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            echo &#39;创建目录失败&#39;;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">makeDir(&#39;.&#x2F;a&#x2F;b&#39; , 0755);</span><br></pre></td></tr></table></div></figure>
+
+
+        <h3 id="18-MySql的索引有哪些"   >
+          <a href="#18-MySql的索引有哪些" class="heading-link"><i class="fas fa-link"></i></a><a href="#18-MySql的索引有哪些" class="headerlink" title="18.MySql的索引有哪些?"></a>18.MySql的索引有哪些?</h3>
+      <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">MySQL目前主要有的索引类型为：普通索引、唯一索引、主键索引、组合索引、全文索引。</span><br></pre></td></tr></table></div></figure>
+
+
+        <h3 id="19-php的八种变量类型"   >
+          <a href="#19-php的八种变量类型" class="heading-link"><i class="fas fa-link"></i></a><a href="#19-php的八种变量类型" class="headerlink" title="19.php的八种变量类型"></a>19.php的八种变量类型</h3>
+      <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int、bool、string、array、resource、null、float、object</span><br></pre></td></tr></table></div></figure>
+
+
+        <h3 id="20-Redis支持五种数据类型"   >
+          <a href="#20-Redis支持五种数据类型" class="heading-link"><i class="fas fa-link"></i></a><a href="#20-Redis支持五种数据类型" class="headerlink" title="20.Redis支持五种数据类型:"></a>20.Redis支持五种数据类型:</h3>
+      <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">分别是string 字符串(key&#x3D;&gt;value)、hash 哈希(key&#x3D;&gt;对象)、list 列表(队列)、set 集合()、zset有序集合</span><br><span class="line"></span><br><span class="line">String（字符串）</span><br><span class="line">string 是 redis 最基本的类型，你可以理解成与 Memcached 一模一样的类型，一个 key 对应一个 value。</span><br><span class="line">string 类型是二进制安全的。意思是 redis 的 string 可以包含任何数据。比如jpg图片或者序列化的对象。</span><br><span class="line">string 类型是 Redis 最基本的数据类型，string 类型的值最大能存储 512MB。</span><br><span class="line">常用命令：set、get、decr、incr、mget等。</span><br><span class="line">注意：一个键最大能存储512MB。</span><br><span class="line"></span><br><span class="line">Hash（哈希）</span><br><span class="line">Redis hash 是一个键值(key&#x3D;&gt;value)对集合；是一个 string 类型的 field 和 value 的映射表，hash 特别适合用于存储对象。</span><br><span class="line">每个 hash 可以存储 232 -1 键值对（40多亿）。</span><br><span class="line">常用命令：hget、hset、hgetall等。</span><br><span class="line">应用场景：存储一些结构化的数据，比如用户的昵称、年龄、性别、积分等，存储一个用户信息对象数据。</span><br><span class="line"></span><br><span class="line">List（列表）</span><br><span class="line">Redis 列表是简单的字符串列表，按照插入顺序排序。你可以添加一个元素到列表的头部（左边）或者尾部（右边）。</span><br><span class="line">list类型经常会被用于消息队列的服务，以完成多程序之间的消息交换。</span><br><span class="line">常用命令：lpush、rpush、lpop、rpop、lrange等。</span><br><span class="line">列表最多可存储 232 - 1 元素 (4294967295, 每个列表可存储40多亿)。</span><br><span class="line"></span><br><span class="line">Set（集合）</span><br><span class="line">Redis的Set是string类型的无序集合。和列表一样，在执行插入和删除和判断是否存在某元素时，效率是很高的。集合最大的优势在于可以进行交集并集差集操作。Set可包含的最大元素数量是4294967295。</span><br><span class="line">集合是通过哈希表实现的，所以添加，删除，查找的复杂度都是O(1)。</span><br><span class="line">应用场景：</span><br><span class="line">1、利用交集求共同好友。</span><br><span class="line">2、利用唯一性，可以统计访问网站的所有独立IP。</span><br><span class="line">3、好友推荐的时候根据tag求交集，大于某个threshold（临界值的）就可以推荐。</span><br><span class="line">常用命令：sadd、spop、smembers、sunion等。</span><br><span class="line">集合中最大的成员数为 232 - 1(4294967295, 每个集合可存储40多亿个成员)。</span><br><span class="line"></span><br><span class="line">zset(sorted set：有序集合)</span><br><span class="line">Redis zset 和 set 一样也是string类型元素的集合,且不允许重复的成员。</span><br><span class="line">不同的是每个元素都会关联一个double类型的分数。redis正是通过分数来为集合中的成员进行从小到大的排序。</span><br><span class="line">zset的成员是唯一的,但分数(score)却可以重复。</span><br><span class="line">sorted set是插入有序的，即自动排序。</span><br><span class="line">常用命令：zadd、zrange、zrem、zcard等。</span><br><span class="line">当你需要一个有序的并且不重复的集合列表时，那么可以选择sorted set数据结构。</span><br><span class="line">应用举例：</span><br><span class="line">（1）例如存储全班同学的成绩，其集合value可以是同学的学号，而score就可以是成绩。</span><br><span class="line">（2）排行榜应用，根据得分列出topN的用户等。</span><br></pre></td></tr></table></div></figure>
+
+
+        <h3 id="21-php中静态变量的和普通变量的区别"   >
+          <a href="#21-php中静态变量的和普通变量的区别" class="heading-link"><i class="fas fa-link"></i></a><a href="#21-php中静态变量的和普通变量的区别" class="headerlink" title="21.php中静态变量的和普通变量的区别"></a>21.php中静态变量的和普通变量的区别</h3>
+      <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">在普通变量之前加上static关键字就构成了静态变量,静态变量只会初始化一次,静态变量的声明不能用表达式，类似于static $a &#x3D; 1+2这种;需要直接复制static $ &#x3D; 1;作用域为局部作用域</span><br></pre></td></tr></table></div></figure>
+
+
+        <h3 id="22-为什么会产生跨域问题"   >
+          <a href="#22-为什么会产生跨域问题" class="heading-link"><i class="fas fa-link"></i></a><a href="#22-为什么会产生跨域问题" class="headerlink" title="22.为什么会产生跨域问题?"></a>22.为什么会产生跨域问题?</h3>
+      <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">跨域问题来源于JavaScript的同源策略，即只有 协议+主机名+端口号(如存在)相同，则允许相互访问。也就是说JavaScript只能访问和操作自己域下的资源，不能访问和操作其他域下的资源。跨域问题是针对JS和ajax的，html本身没有跨域问题，比如a标签、script标签、甚至form标签</span><br><span class="line"></span><br><span class="line">1.浏览器限制 </span><br><span class="line">2.跨域(域名、端口不一样都是跨域问题) </span><br><span class="line">3.XHR(XMLHttpRequest请求)</span><br></pre></td></tr></table></div></figure>
+
+
+        <h3 id="23-解决跨域问题方案"   >
+          <a href="#23-解决跨域问题方案" class="heading-link"><i class="fas fa-link"></i></a><a href="#23-解决跨域问题方案" class="headerlink" title="23.解决跨域问题方案"></a>23.解决跨域问题方案</h3>
+      <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">1.允许浏览器跨域访问 </span><br><span class="line"></span><br><span class="line">2.jsonP</span><br><span class="line"></span><br><span class="line">3.服务端方面解决:  服务器实现需要注意两种情况，简单请求和非简单请求。简单请求是先执行请求再验证，非简单请求是先验证再请求。</span><br><span class="line"></span><br><span class="line">简单请求（比较常见）：方法为get，head，post,请求header里面没有自定义头，Content-Type的值为以下几种 text&#x2F;plain,multipart&#x2F;form-data,application&#x2F;x-www-form-urlencoded。</span><br><span class="line">非简单请求（比较常见）：put,delect方法的ajax请求，发送json格式的ajax请求，带自定义头的ajax请求。</span><br><span class="line">简单请求处理方案：在响应头中添加</span><br><span class="line"></span><br><span class="line">Access-Control-Allow-Origin&#x3D;“允许跨域的url”，即跨省域时，请求头Origin的值，所以一般是获取Origin的值。</span><br><span class="line">Access-Control-Allow-Method&#x3D;“*”，允许的方法。</span><br><span class="line"></span><br><span class="line">非简单请求处理方案：在相应头中添加</span><br><span class="line">Access-Control-Allow-Origin&#x3D;“允许跨域的url”，即跨域时，可以获取请求头Origin的值。</span><br><span class="line">Access-Control-Allow-Method&#x3D;“*”，允许的方法</span><br><span class="line">Access-Control-Request-Headers&#x3D;“Content-Type,自定义的header的key”。</span><br><span class="line"></span><br><span class="line">带cookies的跨域解决：在响应头添加</span><br><span class="line">Access-Control-Allow-Credentials,&#x3D;&quot;true&quot;，允许使用cookies</span><br></pre></td></tr></table></div></figure>
+
+
+        <h3 id="24-redis缓存穿透，缓存击穿，缓存雪崩原因-解决方案"   >
+          <a href="#24-redis缓存穿透，缓存击穿，缓存雪崩原因-解决方案" class="heading-link"><i class="fas fa-link"></i></a><a href="#24-redis缓存穿透，缓存击穿，缓存雪崩原因-解决方案" class="headerlink" title="24.redis缓存穿透，缓存击穿，缓存雪崩原因+解决方案"></a>24.redis缓存穿透，缓存击穿，缓存雪崩原因+解决方案</h3>
+      <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">没搞明白，可以参考一下：https:&#x2F;&#x2F;www.cnblogs.com&#x2F;xichji&#x2F;p&#x2F;11286443.html</span><br></pre></td></tr></table></div></figure>
+
+
+        <h3 id="25-git相关的面试题"   >
+          <a href="#25-git相关的面试题" class="heading-link"><i class="fas fa-link"></i></a><a href="#25-git相关的面试题" class="headerlink" title="25.git相关的面试题"></a>25.git相关的面试题</h3>
+      
+        <h3 id="26-linux相关的面试题"   >
+          <a href="#26-linux相关的面试题" class="heading-link"><i class="fas fa-link"></i></a><a href="#26-linux相关的面试题" class="headerlink" title="26.linux相关的面试题"></a>26.linux相关的面试题</h3>
+      <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">大概就是常用的linux命令</span><br></pre></td></tr></table></div></figure>
+
+
+        <h3 id="27-系统运行出错后去哪里看日志，怎么看日志，排错思路"   >
+          <a href="#27-系统运行出错后去哪里看日志，怎么看日志，排错思路" class="heading-link"><i class="fas fa-link"></i></a><a href="#27-系统运行出错后去哪里看日志，怎么看日志，排错思路" class="headerlink" title="27.系统运行出错后去哪里看日志，怎么看日志，排错思路"></a>27.系统运行出错后去哪里看日志，怎么看日志，排错思路</h3>
+      
+        <h3 id="28-mysql慢查询应该怎么解决，怎么获取慢查询sql"   >
+          <a href="#28-mysql慢查询应该怎么解决，怎么获取慢查询sql" class="heading-link"><i class="fas fa-link"></i></a><a href="#28-mysql慢查询应该怎么解决，怎么获取慢查询sql" class="headerlink" title="28.mysql慢查询应该怎么解决，怎么获取慢查询sql"></a>28.mysql慢查询应该怎么解决，怎么获取慢查询sql</h3>
+      </div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/04/20/git%E7%94%9F%E6%88%90SSH%E5%85%AC%E9%92%A5/">git生成SSH公钥</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2021-04-20</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-04-20</span></span></div></header><div class="post-body"><div class="post-excerpt"><p>1.配置用户名</p>
+<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;liudongdong2&quot;</span><br></pre></td></tr></table></div></figure></div><div class="post-readmore"><a class="post-readmore__link" href="/2021/04/20/git%E7%94%9F%E6%88%90SSH%E5%85%AC%E9%92%A5/"><span class="post-readmore__text">阅读全文</span><span class="post-readmore__icon"><i class="fas fa-long-arrow-alt-right"></i></span></a></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/04/12/yum%E6%BA%90%E5%AE%89%E8%A3%85%E6%8C%87%E5%AE%9A%E7%89%88%E6%9C%AC%E7%9A%84Lnmp%E7%8E%AF%E5%A2%83/">yum源安装指定版本的Lnmp环境</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2021-04-12</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-04-12</span></span></div></header><div class="post-body"><div class="post-excerpt"><p>1.nginx安装目前就用yum包里边自带的版本,不会起冲突</p></div><div class="post-readmore"><a class="post-readmore__link" href="/2021/04/12/yum%E6%BA%90%E5%AE%89%E8%A3%85%E6%8C%87%E5%AE%9A%E7%89%88%E6%9C%AC%E7%9A%84Lnmp%E7%8E%AF%E5%A2%83/"><span class="post-readmore__text">阅读全文</span><span class="post-readmore__icon"><i class="fas fa-long-arrow-alt-right"></i></span></a></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/2021/04/10/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">Git常用命令</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2021-04-10</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-04-20</span></span></div></header><div class="post-body"><div class="post-excerpt"><p>Git的常用命令</p></div><div class="post-readmore"><a class="post-readmore__link" href="/2021/04/10/Git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"><span class="post-readmore__text">阅读全文</span><span class="post-readmore__icon"><i class="fas fa-long-arrow-alt-right"></i></span></a></div></div></article></section><nav class="paginator"><div class="paginator-inner"><span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/2/"><i class="fas fa-angle-right"></i></a></div></nav></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><section class="sidebar-toc hide"></section><!-- ov = overview--><section class="sidebar-ov"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/author-head.png" alt="avatar"></div><p class="sidebar-ov-author__text">诗意青春情暖路长</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a><a class="sidebar-ov-social-item" href="https://plus.google.com/" target="_blank" rel="noopener" data-popover="Google" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-google"></i></span></a><a class="sidebar-ov-social-item" href="https://twitter.com/" target="_blank" rel="noopener" data-popover="Twitter" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-twitter"></i></span></a><a class="sidebar-ov-social-item" href="https://youtube.com/" target="_blank" rel="noopener" data-popover="Youtube" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-youtube"></i></span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">26</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">9</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">9</div><div class="sidebar-ov-state-item__name">标签</div></a></div></section></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 强力驱动</span><span> v5.2.0</span><span class="footer__devider">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.6.2</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><div class="search-mask"></div><div class="search-popup"><span class="search-close"></span><div class="search-input"><input placeholder="搜索文章（支持多关键词，请用空格分隔）"></div><div class="search-results"></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/npm/ribbon.js@latest/dist/ribbon.min.js" size="180" alpha="0.6" zIndex="-1"></script><script>function initSearch() {
+  var isXML = true;
+  var search_path = 'search.json';
+
+  if (!search_path) {
+    search_path = 'search.xml';
+  } else if (/json$/i.test(search_path)) {
+    isXML = false;
+  }
+
+  var path = '/' + search_path;
+  $.ajax({
+    url: path,
+    dataType: isXML ? 'xml' : 'json',
+    async: true,
+    success: function (res) {
+      var datas = isXML ? $('entry', res).map(function () {
+        // 将 XML 转为 JSON
+        return {
+          title: $('title', this).text(),
+          content: $('content', this).text(),
+          url: $('url', this).text()
+        };
+      }).get() : res;
+      var $input = $('.search-input input');
+      var $result = $('.search-results');
+      // 搜索对象（标题、内容）的权重，影响显示顺序
+      var WEIGHT = { title: 100, content: 1 };
+      var searchPost = function () {
+        var searchText = $input.val().toLowerCase().trim();
+        // 根据空白字符分隔关键字
+        var keywords = searchText.split(/[\s]+/);
+        // 搜索结果
+        var matchPosts = [];
+
+        // 有多个关键字时，将原文字整个保存下来
+        if (keywords.length > 1) {
+          keywords.push(searchText);
+        }
+        // 防止未输入字符时搜索
+        if (searchText.length > 0) {
+          datas.forEach(function (data) {
+            var isMatch  = false;
+            // 没有标题的文章使用预设的 i18n 变量代替
+            var title = (data.title && data.title.trim()) || '[ 文章无标题 ]';
+            var titleLower = title && title.toLowerCase();
+            // 删除 HTML 标签 和 所有空白字符
+            var content = data.content && data.content.replace(/<[^>]+>/g, '');
+            var contentLower = content && content.toLowerCase();
+            // 删除重复的 /
+            var postURL = data.url && decodeURI(data.url).replace(/\/{2,}/g, '/');
+            // 标题中匹配到的关键词
+            var titleHitSlice = [];
+            // 内容中匹配到的关键词
+            var contentHitSlice = [];
+
+            keywords.forEach(function (keyword) {
+              /**
+              * 获取匹配的关键词的索引
+              * @param {String} keyword 要匹配的关键字
+              * @param {String} text 原文字
+              * @param {Boolean} caseSensitive 是否区分大小写
+              * @param {Number} weight 匹配对象的权重。权重大的优先显示
+              * @return {Array}
+              */
+              function getIndexByword (word, text, caseSensitive, weight) {
+                if (!word || !text) {
+                  return [];
+                };
+
+                var startIndex = 0; // 每次匹配的开始索引
+                var index = -1;     // 匹配到的索引值
+                var result = [];    // 匹配结果
+
+                if (!caseSensitive) {
+                  word = word.toLowerCase();
+                  text = text.toLowerCase();
+                }
+
+                while((index = text.indexOf(word, startIndex)) !== -1) {
+                  var hasMatch = false;
+                  // 索引位置相同的关键词，保留长度较长的
+                  titleHitSlice.forEach(function (hit) {
+                    if (hit.index === index && hit.word.length < word.length) {
+                      hit.word = word;
+                      hasMatch = true;
+                    }
+                  });
+                  startIndex = index + word.length;
+                  !hasMatch && result.push({ index: index, word: word, weight: weight });
+                }
+                return result;
+              }
+              titleHitSlice = titleHitSlice.concat(getIndexByword(keyword, titleLower, false, WEIGHT.title));
+              contentHitSlice = contentHitSlice.concat(getIndexByword(keyword, contentLower, false, WEIGHT.content));
+            });
+
+            var hitTitle = titleHitSlice.length;
+            var hitContent = contentHitSlice.length;
+
+            if (hitTitle > 0 || hitContent > 0) {
+              isMatch = true;
+            }
+            if (isMatch) {
+              ;[titleHitSlice, contentHitSlice].forEach(function (hit) {
+                // 按照匹配文字的索引的递增顺序排序
+                hit.sort(function (left, right) {
+                  return left.index - right.index;
+                });
+              });
+              /**
+              * 给文本中匹配到的关键词添加标记，从而进行高亮显示
+              * @param {String} text 原文本
+              * @param {Array} hitSlice 匹配项的索引信息
+              * @param {Number} start 开始索引
+              * @param {Number} end 结束索引
+              * @return {String}
+              */
+              function highlightKeyword (text, hitSlice, start, end) {
+                if (!text || !hitSlice || !hitSlice.length) {
+                  return;
+                }
+
+                var result = '';
+                var startIndex = start;
+                var endIndex = end;
+                hitSlice.forEach(function (hit) {
+                  if (hit.index < startIndex) {
+                    return;
+                  }
+
+                  var hitWordEnd = hit.index + hit.word.length;
+                  result += text.slice(startIndex, hit.index);
+                  result += '<b>' + text.slice(hit.index, hitWordEnd) + '</b>';
+                  startIndex = hitWordEnd;
+                });
+                result += text.slice(startIndex, endIndex);
+                return result;
+              }
+
+              var postData = {};
+              // 文章总的搜索权重
+              var postWeight = titleHitSlice.length * WEIGHT.title + contentHitSlice.length * WEIGHT.content;
+              // 标记匹配关键词后的标题
+              var postTitle = highlightKeyword(title, titleHitSlice, 0, title.length) || title;
+              // 标记匹配关键词后的内容
+              var postContent;
+              // 显示内容的长度
+              var SHOW_WORD_LENGTH = 200;
+              // 命中关键词前的字符显示长度
+              var SHOW_WORD_FRONT_LENGTH = 20;
+              var SHOW_WORD_END_LENGTH = SHOW_WORD_LENGTH - SHOW_WORD_FRONT_LENGTH;
+
+              // 截取匹配的第一个字符，前后共 200 个字符来显示
+              if (contentHitSlice.length > 0) {
+                var firstIndex = contentHitSlice[0].index;
+                var start = firstIndex > SHOW_WORD_FRONT_LENGTH ? firstIndex - SHOW_WORD_FRONT_LENGTH : 0;
+                var end = firstIndex + SHOW_WORD_END_LENGTH;
+                postContent = highlightKeyword(content, contentHitSlice, start, end);
+              } else { // 未匹配到内容，直接截取前 200 个字符来显示
+                postContent = content.slice(0, SHOW_WORD_LENGTH);
+              }
+              postData.title = postTitle;
+              postData.content = postContent;
+              postData.url = postURL;
+              postData.weight = postWeight;
+              matchPosts.push(postData);
+            }
+          });
+        }
+
+        var resultInnerHtml = '';
+        if (matchPosts.length) {
+          // 按权重递增的顺序排序，使权重大的优先显示
+          matchPosts.sort(function (left, right) {
+            return right.weight - left.weight;
+          });
+          resultInnerHtml += '<ul>';
+          matchPosts.forEach(function (post) {
+            resultInnerHtml += '<li><a class="search-results-title" href="' + post.url + '">';
+            resultInnerHtml += post.title;
+            resultInnerHtml += '</a><div class="search-results-content">';
+            resultInnerHtml += post.content;
+            resultInnerHtml += '</div></li>';
+          });
+          resultInnerHtml += '</ul>';
+        } else {
+          resultInnerHtml += '<div class="search-results-none"><i class="far fa-meh"></i></div>';
+        }
+        $result.html(resultInnerHtml);
+      };
+      $input.on('input', searchPost);
+      $input.on('keyup', function (e) {
+        if (e.keyCode === Stun.utils.codeToKeyCode('Enter')) {
+          searchPost();
+        }
+      });
+    }
+  });
+}
+
+function closeSearch () {
+  $('body').css({ overflow: 'auto' });
+  $('.search-popup').css({ display: 'none' });
+  $('.search-mask').css({ display: 'none' });
+}
+
+window.addEventListener('DOMContentLoaded', function () {
+  Stun.utils.pjaxReloadLocalSearch = function () {
+    $('.header-nav-search').on('click', function (e) {
+      e.stopPropagation();
+      $('body').css('overflow', 'hidden');
+      $('.search-popup')
+        .velocity('stop')
+        .velocity('transition.expandIn', {
+          duration: 300,
+          complete: function () {
+            $('.search-popup input').focus();
+          }
+        });
+      $('.search-mask')
+        .velocity('stop')
+        .velocity('transition.fadeIn', {
+          duration: 300
+        });
+
+      initSearch();
+    });
+    $('.search-mask, .search-close').on('click', function () {
+      closeSearch();
+    });
+    $(document).on('keydown', function (e) {
+      // Escape <=> 27
+      if (e.keyCode === Stun.utils.codeToKeyCode('Escape')) {
+        closeSearch();
+      }
+    });
+  };
+
+  Stun.utils.pjaxReloadLocalSearch();
+}, false);
+
+function safeOpenUrl(url) {
+  var newTab = window.open();
+  newTab.opener = null;
+  newTab.location = url;
+}
+
+function extSearch(engine) {
+  var engines = {
+    google: 'https://www.google.com/search?q=',
+    bing: 'https://cn.bing.com/search?q=',
+    baidu: 'https://www.baidu.com/s?ie=UTF-8&wd=',
+  };
+  var host = window.location.host;
+  var query = $('.search-input input').val().toLowerCase().trim();
+  var uri = engines[engine] + query + ' site:' + host;
+
+  if (query) {
+    safeOpenUrl(uri);
+  } else {
+    Stun.utils.popAlert('warning', '请输入字符');
+  }
+}
+
+var assistSearchList = window.CONFIG.assistSearch;
+
+if (Array.isArray(assistSearchList)) {
+  assistSearchList.forEach(function (name) {
+    document.querySelector('.search-btns-item--' + name).addEventListener('click', function () {
+      extSearch(name);
+    }, false);
+  });
+}</script><script src="https://cdn.jsdelivr.net/npm/quicklink@1.0.1/dist/quicklink.umd.js"></script><script>function initQuicklink() {
+  quicklink({
+    timeout: '10000',
+    priority: true,
+    ignores: [uri => uri.includes('#'), uri => uri === 'http://blog.lddwo.com/', /\/api\/?/,uri => uri.includes('.xml'),uri => uri.includes('.zip'),(uri, el) => el.hasAttribute('nofollow'),(uri, el) => el.hasAttribute('noprefetch')]
+  });
+}
+
+if (false || false) {
+  initQuicklink();
+} else {
+  window.addEventListener('DOMContentLoaded', initQuicklink, false);
+}</script><script src="/js/utils.js?v=2.6.2"></script><script src="/js/stun-boot.js?v=2.6.2"></script><script src="/js/scroll.js?v=2.6.2"></script><script src="/js/header.js?v=2.6.2"></script><script src="/js/sidebar.js?v=2.6.2"></script><script type="application/json" src="/search.json"></script></body></html>
