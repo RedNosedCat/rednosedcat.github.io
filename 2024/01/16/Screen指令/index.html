@@ -2,14 +2,14 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="Screen指令">
 <meta property="og:url" content="http://blog.lddwo.com/2024/01/16/Screen%E6%8C%87%E4%BB%A4/index.html">
-<meta property="og:site_name" content="Liudongdong Blog">
+<meta property="og:site_name" content="Red nosed cat Blog">
 <meta property="og:description" content="简介       Screen是一款由GNU计划开发的用于命令行终端切换的自由软件。用户可以通过该软件同时连接多个本地或远程的命令行会话，并在其间自由切换">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-01-16T03:06:57.000Z">
 <meta property="article:modified_time" content="2024-01-16T03:18:21.747Z">
-<meta property="article:author" content="Liudongdong">
+<meta property="article:author" content="Red nosed cat">
 <meta property="article:tag" content="Linux">
-<meta name="twitter:card" content="summary"><title>Screen指令 | Liudongdong Blog</title><link ref="canonical" href="http://blog.lddwo.com/2024/01/16/Screen%E6%8C%87%E4%BB%A4/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.6.2"><script>var Stun = window.Stun || {};
+<meta name="twitter:card" content="summary"><title>Screen指令 | Red nosed cat Blog</title><link ref="canonical" href="http://blog.lddwo.com/2024/01/16/Screen%E6%8C%87%E4%BB%A4/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.6.2"><script>var Stun = window.Stun || {};
 var CONFIG = {
   root: '/',
   algolia: undefined,
@@ -33,58 +33,58 @@ var CONFIG = {
   sourcePath: {"js":"js","css":"css","images":"images"},
 };
 
-window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.2.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">文章</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-search"><span class="header-nav-search__icon"><i class="fas fa-search"></i></span><span class="header-nav-search__text">搜索</span></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">Liudongdong Blog</div><div class="header-banner-info__subtitle">write code and live</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">Screen指令</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2024-01-16</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2024-01-16</span></span></div></header><div class="post-body">
-        <h3 id="简介"   >
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.2.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">文章</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-search"><span class="header-nav-search__icon"><i class="fas fa-search"></i></span><span class="header-nav-search__text">搜索</span></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">Red nosed cat Blog</div><div class="header-banner-info__subtitle">write code</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">Screen指令</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2024-01-16</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2024-01-16</span></span></div></header><div class="post-body">
+        <h3 id="简介">
           <a href="#简介" class="heading-link"><i class="fas fa-link"></i></a><a href="#简介" class="headerlink" title="简介"></a>简介</h3>
       <p>Screen是一款由GNU计划开发的用于命令行终端切换的自由软件。用户可以通过该软件同时连接多个本地或远程的命令行会话，并在其间自由切换</p>
 <a id="more"></a>
 
 
-        <h3 id="安装"   >
+        <h3 id="安装">
           <a href="#安装" class="heading-link"><i class="fas fa-link"></i></a><a href="#安装" class="headerlink" title="安装"></a>安装</h3>
       <figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install screen</span><br></pre></td></tr></table></div></figure>
 
 
-        <h3 id="使用"   >
+        <h3 id="使用">
           <a href="#使用" class="heading-link"><i class="fas fa-link"></i></a><a href="#使用" class="headerlink" title="使用"></a>使用</h3>
       <ul>
 <li>
-        <h3 id="新建会话"   >
+        <h3 id="新建会话">
           <a href="#新建会话" class="heading-link"><i class="fas fa-link"></i></a><a href="#新建会话" class="headerlink" title="新建会话"></a>新建会话</h3>
       </li>
 <li>
-        <h3 id="1-新建一个叫yourname的session"   >
+        <h3 id="1-新建一个叫yourname的session">
           <a href="#1-新建一个叫yourname的session" class="heading-link"><i class="fas fa-link"></i></a><a href="#1-新建一个叫yourname的session" class="headerlink" title="1. 新建一个叫yourname的session"></a>1. 新建一个叫yourname的session</h3>
       <figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">screen -S yourname</span><br></pre></td></tr></table></div></figure></li>
 <li>
-        <h3 id="2-列出当前所有的session"   >
+        <h3 id="2-列出当前所有的session">
           <a href="#2-列出当前所有的session" class="heading-link"><i class="fas fa-link"></i></a><a href="#2-列出当前所有的session" class="headerlink" title="2. 列出当前所有的session"></a>2. 列出当前所有的session</h3>
       <figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">screen -ls</span><br></pre></td></tr></table></div></figure></li>
 <li>
-        <h3 id="3-恢复会话（回到yourname这个session）"   >
+        <h3 id="3-恢复会话（回到yourname这个session）">
           <a href="#3-恢复会话（回到yourname这个session）" class="heading-link"><i class="fas fa-link"></i></a><a href="#3-恢复会话（回到yourname这个session）" class="headerlink" title="3. 恢复会话（回到yourname这个session）"></a>3. 恢复会话（回到yourname这个session）</h3>
       <figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">screen -r yourname</span><br></pre></td></tr></table></div></figure></li>
 <li>
-        <h3 id="4-detach某个session"   >
+        <h3 id="4-detach某个session">
           <a href="#4-detach某个session" class="heading-link"><i class="fas fa-link"></i></a><a href="#4-detach某个session" class="headerlink" title="4. detach某个session"></a>4. detach某个session</h3>
       <figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">screen -d yourname -&gt; 远程detach某个session </span><br><span class="line">screen -d -r yourname -&gt; 结束当前session并回到yourname这个session</span><br></pre></td></tr></table></div></figure></li>
 <li>
-        <h3 id="5-删除会话"   >
+        <h3 id="5-删除会话">
           <a href="#5-删除会话" class="heading-link"><i class="fas fa-link"></i></a><a href="#5-删除会话" class="headerlink" title="5. 删除会话"></a>5. 删除会话</h3>
       <figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">screen -S pid-X quit</span><br></pre></td></tr></table></div></figure>
 </li>
 <li>
-        <h3 id="6-返回主终端-组合键得同时按下去"   >
+        <h3 id="6-返回主终端-组合键得同时按下去">
           <a href="#6-返回主终端-组合键得同时按下去" class="heading-link"><i class="fas fa-link"></i></a><a href="#6-返回主终端-组合键得同时按下去" class="headerlink" title="6. 返回主终端(组合键得同时按下去)"></a>6. 返回主终端(组合键得同时按下去)</h3>
       <figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">- Ctrl+a 在按d </span><br><span class="line">- Ctrl+a+d</span><br></pre></td></tr></table></div></figure>
 </li>
 <li>
-        <h3 id="7-退出当前终端-结束任务"   >
+        <h3 id="7-退出当前终端-结束任务">
           <a href="#7-退出当前终端-结束任务" class="heading-link"><i class="fas fa-link"></i></a><a href="#7-退出当前终端-结束任务" class="headerlink" title="7. 退出当前终端(结束任务)"></a>7. 退出当前终端(结束任务)</h3>
       <figure class="highlight bash"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">exit</span></span><br></pre></td></tr></table></div></figure>
 </li>
 </ul>
-</div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ 本文结束，感谢您的阅读 ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">本文作者: </span><span class="copyright-author__value"><a href="http://blog.lddwo.com">Liudongdong</a></span></div><div class="copyright-link"><span class="copyright-link__name">本文链接: </span><span class="copyright-link__value"><a href="http://blog.lddwo.com/2024/01/16/Screen%E6%8C%87%E4%BB%A4/">http://blog.lddwo.com/2024/01/16/Screen%E6%8C%87%E4%BB%A4/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">版权声明: </span><span class="copyright-notice__value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div><div class="post-tags"><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="http://blog.lddwo.com/tags/Linux/">Linux</a></span></div><nav class="post-paginator paginator"><div class="paginator-next"><a class="paginator-next__link" href="/2024/01/16/PHP%E5%AF%BC%E5%87%BAcsv/"><span class="paginator-prev__text">PHP导出csv</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><section class="sidebar-toc hide"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-text">
+</div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ 本文结束，感谢您的阅读 ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">本文作者: </span><span class="copyright-author__value"><a href="http://blog.lddwo.com">Red nosed cat</a></span></div><div class="copyright-link"><span class="copyright-link__name">本文链接: </span><span class="copyright-link__value"><a href="http://blog.lddwo.com/2024/01/16/Screen%E6%8C%87%E4%BB%A4/">http://blog.lddwo.com/2024/01/16/Screen%E6%8C%87%E4%BB%A4/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">版权声明: </span><span class="copyright-notice__value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div><div class="post-tags"><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="http://blog.lddwo.com/tags/Linux/">Linux</a></span></div><nav class="post-paginator paginator"><div class="paginator-next"><a class="paginator-next__link" href="/2024/01/16/PHP%E5%AF%BC%E5%87%BAcsv/"><span class="paginator-prev__text">PHP导出csv</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><section class="sidebar-toc hide"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-text">
           简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-text">
           安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8"><span class="toc-text">
           使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B0%E5%BB%BA%E4%BC%9A%E8%AF%9D"><span class="toc-text">
